@@ -25,7 +25,7 @@
 	
 	<!--============= 配mabatis的整合============== -->
 	<!-- 配置和mabatis的整合 -->
-	<bean id="SqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<!-- 指定 mybatis全局配置文件的位置-->
 		<property name="configLocation" value="classpath:mybatis-config.xml"></property>
 		<property name="dataSource" ref="PooledDataSource"></property>
@@ -36,12 +36,13 @@
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<!-- 扫描所有dao接口的实现，加入到ioc容器中 -->
 		<property name="basePackage" value="com.orderSystem.dao"></property>
+		 <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
 	</bean>
-	<!-- 配置一个可以批量的sqlSession -->
+	<!-- 配置一个可以批量的sqlSession 
 	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
 		<constructor-arg name="sqlSessionFactory" ref="SqlSessionFactory"></constructor-arg>
 		<constructor-arg name="executorType" value="BATCH"></constructor-arg>
-	</bean>
+	</bean>--> 
 	<!--===================== 事物整合===================== -->
 	<!-- 事物控制 -->
 	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">

@@ -1,14 +1,10 @@
 package com.orderSystem.dao;
 
 import com.orderSystem.entiry.Admin;
-import com.orderSystem.entiry.AdminExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface AdminMapper {
-    long countByExample(AdminExample example);
-
-    int deleteByExample(AdminExample example);
+   
 
     int deleteByPrimaryKey(Integer aid);
 
@@ -16,15 +12,11 @@ public interface AdminMapper {
 
     int insertSelective(Admin record);
 
-    List<Admin> selectByExample(AdminExample example);
-
     Admin selectByPrimaryKey(Integer aid);
-
-    int updateByExampleSelective(@Param("record") Admin record, @Param("example") AdminExample example);
-
-    int updateByExample(@Param("record") Admin record, @Param("example") AdminExample example);
-
+ 
     int updateByPrimaryKeySelective(Admin record);
 
     int updateByPrimaryKey(Admin record);
+    
+    Admin findByAdmin(@Param("username") String username,@Param("password") String password);
 }

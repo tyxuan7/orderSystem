@@ -1,30 +1,47 @@
 package com.orderSystem.dao;
 
 import com.orderSystem.entiry.Product;
-import com.orderSystem.entiry.ProductExample;
+
 import java.util.List;
+import java.util.Set;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface ProductMapper {
-    long countByExample(ProductExample example);
-
-    int deleteByExample(ProductExample example);
-
     int deleteByPrimaryKey(Integer pid);
 
     int insert(Product record);
 
     int insertSelective(Product record);
 
-    List<Product> selectByExample(ProductExample example);
-
     Product selectByPrimaryKey(Integer pid);
-
-    int updateByExampleSelective(@Param("record") Product record, @Param("example") ProductExample example);
-
-    int updateByExample(@Param("record") Product record, @Param("example") ProductExample example);
-
+ 
     int updateByPrimaryKeySelective(Product record);
 
     int updateByPrimaryKey(Product record);
+    
+    List<Product> listProduct();
+    
+    
+    List<Product> findByPname(String pname);
+    
+    //前台 
+    
+    /**列出最新的10条商品
+     * @return list
+     */
+    List<Product> frontlistNew();
+    
+    
+    /**列出最热的10条商品
+     * @return list
+     */
+    List<Product> frontlistHot();
+    
+    
+    /**更新商品的数量
+     * @param set 商品的集合
+     * @return int 
+     */
+    int subProductNumber(@Param("list") Set<Product> set);
 }
