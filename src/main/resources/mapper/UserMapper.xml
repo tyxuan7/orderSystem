@@ -26,14 +26,14 @@
   <select id="checkUsername"  parameterType="java.lang.String" resultType="java.lang.Integer">
   	select
   		count(*)
-  	form zk_user
+  	from zk_user
   	where username=#{value}
   </select>
   
   <select id="login" parameterType="com.orderSystem.entiry.User" resultType="com.orderSystem.entiry.User">
   	select 
   		<include refid="Base_Column_List" />
-  		form zk_user
+  		from zk_user
   		where username=#{username} and password=#{password}
   </select>
   

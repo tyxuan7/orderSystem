@@ -23,7 +23,7 @@
   <select id="listSorderByfid" parameterType="java.lang.Integer" resultType="com.orderSystem.entiry.Sorder">
   	select
   	<include refid="Base_Column_List" />
-  	form zk_sorder
+  	from zk_sorder
   	where fid = #{fid,jdbcType=INTEGER}
   </select>
   

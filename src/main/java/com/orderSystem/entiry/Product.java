@@ -15,7 +15,7 @@ public class Product {
 
     private String pdesc;
 
-    private Byte isHot;
+    private Boolean isHot;
 
     private Date pdate;
 
@@ -69,11 +69,11 @@ public class Product {
         this.pdesc = pdesc == null ? null : pdesc.trim();
     }
 
-    public Byte getIsHot() {
+    public Boolean getIsHot() {
         return isHot;
     }
 
-    public void setIsHot(Byte isHot) {
+    public void setIsHot(Boolean isHot) {
         this.isHot = isHot;
     }
 
@@ -99,6 +99,25 @@ public class Product {
 				+ sprice + ", cprice=" + cprice + ", pic=" + pic + ", pdesc="
 				+ pdesc + ", isHot=" + isHot + ", pdate=" + pdate + ", number="
 				+ number + "]";
+	}
+
+	public Product() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Product(Integer pid, String pname, Double sprice, Double cprice,
+			String pic, String pdesc, Boolean isHot, Date pdate, Integer number) {
+		super();
+		this.pid = pid;
+		this.pname = pname;
+		this.sprice = sprice;
+		this.cprice = cprice;
+		this.pic = pic;
+		this.pdesc = pdesc;
+		this.isHot = isHot;
+		this.pdate = pdate;
+		this.number = number;
 	}
     
     

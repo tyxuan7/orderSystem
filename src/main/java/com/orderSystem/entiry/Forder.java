@@ -108,6 +108,14 @@ public class Forder {
 
     
 
+	public Set<Sorder> getSorderSet() {
+		return sorderSet;
+	}
+
+	public void setSorderSet(Set<Sorder> sorderSet) {
+		this.sorderSet = sorderSet;
+	}
+
 	@Override
 	public String toString() {
 		return "Forder [fid=" + fid + ", name=" + name + ", phone=" + phone

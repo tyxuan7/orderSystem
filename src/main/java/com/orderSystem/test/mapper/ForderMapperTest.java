@@ -1,4 +1,4 @@
-package ForderMapperTest;
+package com.orderSystem.test.mapper;
 
 import java.util.List;
 
@@ -20,6 +20,5 @@ public class ForderMapperTest extends BaseTest {
 		 List<Sorder> account = sorderMapper.listSorderByfid(201407013);
 		
 		System.out.println("------------------" + account);
-		System.out.println("------------------" + sorderMapper);
 	}
 }

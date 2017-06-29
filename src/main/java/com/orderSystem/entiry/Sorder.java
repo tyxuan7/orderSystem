@@ -10,6 +10,8 @@ public class Sorder {
     private Integer number;
 
     private Integer fid;
+    
+    private Product product;
 
     private Integer pid;
 
@@ -57,14 +59,24 @@ public class Sorder {
         return pid;
     }
 
-    public void setPid(Integer pid) {
+    
+    public Product getProduct() {
+		return product;
+	}
+
+	public void setProduct(Product product) {
+		this.product = product;
+	}
+
+	public void setPid(Integer pid) {
         this.pid = pid;
     }
 
 	@Override
 	public String toString() {
 		return "Sorder [sid=" + sid + ", name=" + name + ", price=" + price
-				+ ", number=" + number + ", fid=" + fid + ", pid=" + pid + "]";
+				+ ", number=" + number + ", fid=" + fid + ", product="
+				+ product + ", pid=" + pid + "]";
 	}
 
 	@Override
@@ -74,8 +86,8 @@ public class Sorder {
 		result = prime * result + ((fid == null) ? 0 : fid.hashCode());
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		result = prime * result + ((number == null) ? 0 : number.hashCode());
-		result = prime * result + ((pid == null) ? 0 : pid.hashCode());
 		result = prime * result + ((price == null) ? 0 : price.hashCode());
+		result = prime * result + ((product == null) ? 0 : product.hashCode());
 		result = prime * result + ((sid == null) ? 0 : sid.hashCode());
 		return result;
 	}
@@ -104,15 +116,15 @@ public class Sorder {
 				return false;
 		} else if (!number.equals(other.number))
 			return false;
-		if (pid == null) {
-			if (other.pid != null)
-				return false;
-		} else if (!pid.equals(other.pid))
-			return false;
 		if (price == null) {
 			if (other.price != null)
 				return false;
 		} else if (!price.equals(other.price))
+			return false;
+		if (product == null) {
+			if (other.product != null)
+				return false;
+		} else if (!product.equals(other.product))
 			return false;
 		if (sid == null) {
 			if (other.sid != null)
@@ -121,6 +133,8 @@ public class Sorder {
 			return false;
 		return true;
 	}
+
+
     
     
 }

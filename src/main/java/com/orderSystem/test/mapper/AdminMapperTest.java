@@ -1,4 +1,4 @@
-package com.orderSystem.test;
+package com.orderSystem.test.mapper;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,6 +8,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.orderSystem.dao.AdminMapper;
 import com.orderSystem.entiry.Admin;
+import com.orderSystem.test.BaseTest;
 
 
 public class AdminMapperTest extends BaseTest {
