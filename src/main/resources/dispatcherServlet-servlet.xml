@@ -40,6 +40,7 @@
 			<mvc:interceptor>
 				 <!-- 匹配的是url路径， 如果不配置或/**,将拦截所有的Controller -->
 				 <mvc:mapping path="/product/*"/>
+				 <mvc:exclude-mapping path="/product/frontlist"/>
 				 <mvc:exclude-mapping path="/product/detail"/>
 				 <bean class="com.orderSystem.Interceptor.BankInterceptor"></bean>  
 			</mvc:interceptor>

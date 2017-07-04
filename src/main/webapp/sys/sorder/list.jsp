@@ -16,12 +16,12 @@
 
 		<title>订单项列表</title>
 		<link rel="stylesheet" type="text/css"
-			href="<%=basePath%>jslib/bootstrap/css/bootstrap.css">
+			href="<%=basePath%>/static/jslib/bootstrap/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css"
-			href="<%=basePath%>css/theme.css">
+			href="<%=basePath%>/static/css/theme.css">
 		<link rel="stylesheet"
-			href="<%=basePath%>jslib/font-awesome/css/font-awesome.css">
-		<script src="<%=basePath%>jslib/jquery-1.7.2.min.js"
+			href="<%=basePath%>/static/jslib/font-awesome/css/font-awesome.css">
+		<script src="<%=basePath%>/static/jslib/jquery-1.7.2.min.js"
 			type="text/javascript"></script>
 	</head>
 

@@ -15,9 +15,9 @@
 
 			
 
-<link href="<%=basePath %>/css/common.css" rel="stylesheet" type="text/css"/>
-<link href="<%=basePath %>/css/register.css" rel="stylesheet" type="text/css"/>
-<script src="<%=basePath%>jslib/jquery-1.7.2.min.js"
+<link href="<%=basePath %>/static/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="<%=basePath %>/static/css/register.css" rel="stylesheet" type="text/css"/>
+<script src="<%=basePath%>/static/jslib/jquery-1.7.2.min.js"
 			type="text/javascript"></script>
 
 			

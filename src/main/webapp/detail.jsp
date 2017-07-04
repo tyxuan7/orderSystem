@@ -11,9 +11,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>商城</title>
-<link href="<%=basePath %>/css/common.css" rel="stylesheet" type="text/css"/>
-<link href="<%=basePath %>/css/product.css" rel="stylesheet" type="text/css"/>
-<script src="<%=basePath%>jslib/jquery-1.7.2.min.js"
+<link href="<%=basePath %>/static/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="<%=basePath %>/static/css/product.css" rel="stylesheet" type="text/css"/>
+<script src="<%=basePath%>/static/jslib/jquery-1.7.2.min.js"
 			type="text/javascript"></script>
             
             <script type="text/javascript">
@@ -56,13 +56,13 @@
 	<div class="span5">
 		<div class="logo">
 			<a>
-				<img src="<%=basePath%>/image/r___________renleipic_01/logo.jpg" alt="商城">
+				<img src="<%=basePath%>/static/image/r___________renleipic_01/logo.jpg" alt="商城">
 			</a>
 		</div>
 	</div>
 	<div class="span9">
 <div class="headerAd">
-					<img src="<%=basePath%>/image/r___________renleipic_01/header.jpg" alt="正品保障" title="正品保障" height="50" width="320">
+					<img src="<%=basePath%>/static/image/r___________renleipic_01/header.jpg" alt="正品保障" title="正品保障" height="50" width="320">
 </div>	</div>
 	<div class="span10 last">
 		<div class="topNav clearfix">

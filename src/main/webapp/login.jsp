@@ -15,8 +15,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <title>会员登录</title>
 
-<link href="<%=basePath %>/css/common.css" rel="stylesheet" type="text/css"/>
-<link href="<%=basePath %>/css/login.css" rel="stylesheet" type="text/css"/>
+<link href="<%=basePath %>/static/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="<%=basePath %>/static/css/login.css" rel="stylesheet" type="text/css"/>
 
 
 </head>

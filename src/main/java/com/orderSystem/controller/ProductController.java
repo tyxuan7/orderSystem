@@ -170,7 +170,7 @@ public class ProductController {
 		return "redirect:list";
 	}
 	
-	
+	//后台
 	//商品名查询
 	@RequestMapping(value="/find",method=RequestMethod.POST)
 	public String findByPname(@Param("pname") String pname,Model model){
@@ -207,6 +207,6 @@ public class ProductController {
 		
 		model.addAttribute("pro", pro);
 		
-		return "forword:/detail.jsp";
+		return "forward:/detail.jsp";
 	}
 }

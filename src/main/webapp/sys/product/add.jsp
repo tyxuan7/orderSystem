@@ -16,17 +16,17 @@
 
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css"
-			href="<%=basePath%>jslib/bootstrap/css/bootstrap.css">
+			href="<%=basePath%>/static/jslib/bootstrap/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css"
-			href="<%=basePath%>css/theme.css">
+			href="<%=basePath%>/static/css/theme.css">
 			<link rel="stylesheet" type="text/css" href="<%=basePath%>jslib/bootstrap/css/bootstrap-datetimepicker.min.css">
 		<link rel="stylesheet"
-			href="<%=basePath%>jslib/font-awesome/css/font-awesome.css">
-		<script src="<%=basePath%>jslib/jquery-1.7.2.min.js"
+			href="<%=basePath%>/static/jslib/font-awesome/css/font-awesome.css">
+		<script src="<%=basePath%>/static/jslib/jquery-1.7.2.min.js"
 			type="text/javascript"></script>
-		<script src="<%=basePath%>jslib/bootstrap/js/bootstrap.min.js"></script>
-		<script src="<%=basePath%>jslib/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
-			<script src="<%=basePath%>jslib/bootstrap/js/bootstrap-datetimepicker.zh-CN.js"></script>
+		<script src="<%=basePath%>/static/jslib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="<%=basePath%>/static/jslib/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+			<script src="<%=basePath%>/static/jslib/bootstrap/js/bootstrap-datetimepicker.zh-CN.js"></script>
             
 
 

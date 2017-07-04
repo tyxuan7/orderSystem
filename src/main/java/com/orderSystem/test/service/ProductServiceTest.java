@@ -1,5 +1,7 @@
 package com.orderSystem.test.service;
 
+import java.util.List;
+
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -23,6 +25,9 @@ public class ProductServiceTest extends BaseTest {
 	@Test
 	public void findProduct(){
 		
+		List<Product> list = productService.frontlistHot();
+		
+		System.out.println(list);
 	}
 
 }

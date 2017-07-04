@@ -23,7 +23,7 @@
 <div class="container header">
 	<div class="span5">
 		<div class="logo">
-			<a href="<%=basePath %>/view/index.jsp">
+			<a href="<%=basePath %>/product/frontlist">
 				<img src="<%=basePath %>/static/image/r___________renleipic_01/logo.jpg" alt="商城"/>
 			</a>
 		</div>
@@ -138,7 +138,9 @@
 						<ul class="tabContent" style="display: block;">
 						       <c:forEach items="${listhot}" var="list">
 									<li>
-										<a target="_blank" href="<%=basePath%>product/detail?pid=${list.pid}"><img src="<%=basePath %>/static/upload/${list.pic}"  style="display: block;"></a>
+										<a target="_blank" href="<%=basePath%>product/detail?pid=${list.pid}">
+											<img src="<%=basePath %>/static/upload/${list.pic}"  style="display: block;">
+										</a>
 									</li>
 								</c:forEach>	
 						</ul>
@@ -169,9 +171,10 @@
 						 -->						
 						 <ul class="tabContent" style="display: block;">
 						       <c:forEach items="${listnew}" var="list">
-									<li>
-								
-										<a target="_blank" href="<%=basePath%>product/detail?pid=${list.pid}"><img src="<%=basePath %>/upload/${list.pic}"  style="display: block;"></a>							
+									<li>		
+										<a target="_blank" href="<%=basePath%>product/detail?pid=${list.pid}">
+											<img src="<%=basePath %>/static/upload/${list.pic}"  style="display: block;">
+										</a>							
 									</li>
 								</c:forEach>
 								

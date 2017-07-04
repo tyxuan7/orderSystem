@@ -61,11 +61,11 @@ public class UserController {
 			
 			model.addAttribute("msg","用户名或密码错误");
 			
-			return "forwarf:/login.jsp";
+			return "forward:/login.jsp";
 		}
 		
 		request.getSession()
-				.setAttribute("forderuser", exituser.getUsername());
+				.setAttribute("frontuser", exituser.getUsername());
 		request.getSession()
 				.setAttribute("forderId", exituser.getUid());
 		

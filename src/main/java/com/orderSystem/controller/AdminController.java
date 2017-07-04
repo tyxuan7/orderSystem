@@ -40,14 +40,24 @@ public class AdminController {
 	@RequestMapping(value="/login",method=RequestMethod.POST)
 	public String login(Admin admin,HttpSession session){
 		
-		Admin existadmin = adminService.login(admin.getUsername(), admin.getPassword());
+		try{
+			Admin existadmin = adminService.login(admin.getUsername(), admin.getPassword());
+			
+			session.setAttribute("adminusername", existadmin.getUsername());
+			
+			session.removeAttribute("msg");
+			
+			//登录后重定向
+			return "redirect:/admin/";
+		}
+		catch(Exception e){
+			session.setAttribute("msg", "用户或密码错误");
+		}
 		
-		session.setAttribute("adminusername", existadmin.getUsername());
+		return "redirect:/admin/login";
 		
-		session.removeAttribute("msg");
 		
-		//登录后重定向
-		return "redirect:/admin/";
+		
 	}
 	
 	//退出
@@ -56,7 +66,7 @@ public class AdminController {
 		
 		session.removeAttribute("adminusername");
 		
-		return "rediret:/admin/login";
+		return "redirect:/admin/login";
 	}
 	
 }

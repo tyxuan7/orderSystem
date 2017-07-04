@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ page import="cn.edu.nuc.shop.entiry.Forder"
+    <%@ page import="com.orderSystem.entiry.Forder"
    %>
       <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     <%
@@ -27,8 +27,8 @@ Forder forder = (Forder)session.getAttribute("forder");
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>购物车</title>
 
-<link href="<%=basePath %>/css/common.css" rel="stylesheet" type="text/css">
-<link href="<%=basePath %>/css/cart.css" rel="stylesheet" type="text/css">
+<link href="<%=basePath %>/static/css/common.css" rel="stylesheet" type="text/css">
+<link href="<%=basePath %>/static/css/cart.css" rel="stylesheet" type="text/css">
 
 
 </head>

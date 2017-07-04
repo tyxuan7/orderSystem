@@ -28,7 +28,7 @@ public class ProductServiceImpl implements ProductService {
 		return productMapper.insert(product);
 	}
 
-	@Override
+	@Override 
 	public int deleteProduct(Product product) {
 		// TODO Auto-generated method stub
 		return productMapper.deleteByPrimaryKey(product.getPid());

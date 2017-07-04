@@ -1,6 +1,12 @@
 package com.orderSystem.entiry;
 
+/**
+ * ¹ºÎï³µ¶©µ¥
+ * @author Administrator
+ *
+ */
 public class Sorder {
+	
     private Integer sid;
 
     private String name;
